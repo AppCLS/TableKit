@@ -28,7 +28,7 @@ open class TableDirector: NSObject, UITableViewDataSource, UITableViewDelegate {
     open private(set) weak var tableView: UITableView?
     open fileprivate(set) var sections = [TableSection]()
     
-    private weak var scrollDelegate: UIScrollViewDelegate?
+    public weak var scrollDelegate: UIScrollViewDelegate?
     private var cellRegisterer: TableCellRegisterer?
     public private(set) var rowHeightCalculator: RowHeightCalculator?
     private var sectionsIndexTitlesIndexes: [Int]?
